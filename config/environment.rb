@@ -69,8 +69,8 @@ Rails::Initializer.run do |config|
   old_verbose = $VERBOSE
   $VERBOSE = nil
 
-  SITE_NAME = '* PLACE SITE NAME HERE *'
-  SITE_DOMAIN = 'CHANGEME.com'
+  SITE_NAME = 'Igor e Ana Rachel | Dia 27 de Junho de 2009 às 18:00hs'
+  SITE_DOMAIN = 'igoreanarachel.com.br'
   SITE_URL = "http://www.#{SITE_DOMAIN}/"
   SITE_EMAIL = "contact@#{SITE_DOMAIN}"
   SITE_META_KEYWORDS = ""

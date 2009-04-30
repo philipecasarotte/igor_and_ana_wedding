@@ -22,17 +22,23 @@
 	<%= yield :head %>
 </head>
 <body>
-
-<div id="content">
-	<% [:error, :notice].each do |message| %>
-		<% content_tag :div, :class => message do %>
-			<%= flash[message] %>
-		<% end if flash[message] %>
-	<% end %>
-	<%= yield  %>
-</div>
-
-<div id="footer"><%= link_to 'Professional Website Design', 'http://www.dburnsdesign.com', :target => '_blank' %> by DBurns Design</div>
-
+	<div id="main">
+		<ul id="menu">
+			<li><%= "Home", root_path %></li>
+			<li><%= "A Cerimônia", page_path("a-cerimonia") %></li>
+			<li><%= "Fotos", "image_galleries_path" %></li>
+			<li><%= "O Casal", page_path("o-casal") %></li>
+			<li><%= "Mensagens", "posts_path" %></li>
+		</ul>
+		<div id="content">
+			<% [:error, :notice].each do |message| %>
+				<% content_tag :div, :class => message do %>
+					<%= flash[message] %>
+				<% end if flash[message] %>
+			<% end %>
+			<%= yield  %>
+		</div>
+		<div id="footer"><%= link_to 'Ruby on Rails DEvelopment', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte (irmão da noiva)</div>
+	</div>
 </body>
 </html>
