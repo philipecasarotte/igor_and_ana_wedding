@@ -2,4 +2,15 @@
 
 * {margin:0;padding:0;outline:none;}
 
-body {background:white url("/images/bg/body.png") repeat-x;}
+body {background:white url("/images/bg/body.png") 0 142px repeat-x;font:normal 12px "Trebuchet MS", Verdana, Arial, sans-serif;color:#666;}
+
+a {color:#F852B9;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+#main {background:url("/images/bg/main.png") center top no-repeat;}
+#main.home {background:url("/images/bg/home.png") center top no-repeat;}
+
+#menu {width:761px;margin:0 auto;background-color:Red;}
+#menu li {float:left;display:inline;}
+
+#content {width:761px;margin:0 auto;}

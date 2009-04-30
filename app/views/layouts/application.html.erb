@@ -24,11 +24,11 @@
 <body>
 	<div id="main">
 		<ul id="menu">
-			<li><%= "Home", root_path %></li>
-			<li><%= "A Cerimônia", page_path("a-cerimonia") %></li>
-			<li><%= "Fotos", "image_galleries_path" %></li>
-			<li><%= "O Casal", page_path("o-casal") %></li>
-			<li><%= "Mensagens", "posts_path" %></li>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "A Cerimônia", page_path("a-cerimonia") %></li>
+			<li><%= link_to "Fotos", "image_galleries_path" %></li>
+			<li><%= link_to "O Casal", page_path("o-casal") %></li>
+			<li><%= link_to "Mensagens", "posts_path" %></li>
 		</ul>
 		<div id="content">
 			<% [:error, :notice].each do |message| %>
@@ -37,8 +37,8 @@
 				<% end if flash[message] %>
 			<% end %>
 			<%= yield  %>
+			<div id="footer"><%= link_to 'Ruby on Rails Development', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte (irmão da noiva)</div>
 		</div>
-		<div id="footer"><%= link_to 'Ruby on Rails DEvelopment', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte (irmão da noiva)</div>
 	</div>
 </body>
 </html>
