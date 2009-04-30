@@ -1,4 +1,3 @@
-# DBurns Design Base App
+# Weddign Website
 
-
-A base template for development of many other applications
+A simple aaplication for my sister's wedding website
