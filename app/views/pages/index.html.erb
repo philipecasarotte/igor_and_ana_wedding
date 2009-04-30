@@ -1,7 +1,26 @@
-<h1>Pages</h1>
-
-<ul>
-	<% @pages.each do |page| %>
-	<li><%= link_to page.name, page_path(page.permalink) %></li>
-	<% end %>
-</ul>
+<%= image_tag "igor_e_ana.jpg", :alt => "Igor e Ana Rachel" %>
+<div id="messages">
+	<h2>ÚLTIMAS MENSAGENS<%= link_to "VER TODAS", "posts_path", :class => "button" %></h2>
+	<ul>
+		<li class="first">
+			<strong>Philipe Casarotte disse:</strong>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+		</li>
+		<li>
+			<strong>Philipe Casarotte disse:</strong>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+		</li>
+	</ul>
+	<h2>AGRADECIMENTOS</h2>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div id="directions">
+	<%= link_to image_tag("gift_list.png", :alt => "Lista de Presentes"), page_path("lista-de-presentes") %>
+	<h2>QUANDO E ONDE?</h2>
+	<h3>27 <small>de Junho de</small> 2009 <small>às</small> 18:00hs</h3>
+	<%= image_tag "rosa_rosarum.jpg", :alt => "Rosa Rosarum", :class => "wrap" %>
+	<h4>Espaço Rosa Rosarum</h4>
+	<h5>Salão Jade</h5>
+	<address>Rua Francisco Leitão, 416<br/>Pinheiros, São Paulo/SP</address>
+	<p>Clique <%= link_to "aqui", page_path("como-chegar") %> para saber como chegar ou <%= link_to "aqui", page_path("onde-ficar") %> para ver onde se hospedar.</p>
+</div>
