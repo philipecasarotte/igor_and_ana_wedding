@@ -1,3 +1,5 @@
 @import url("plugins/crossbrowser.css");
 
 * {margin:0;padding:0;outline:none;}
+
+body {background:white url("/images/bg/body.png") repeat-x;}
