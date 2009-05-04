@@ -1,3 +1,66 @@
+ana:
+    name: "Ana Rachel Tauk Casarotte"
+    body: "Coming soon"
+    parent: o_casal
+    permalink: "ana-rachel"
+    is_protected: 1
+
+igor:
+    name: "Igor Borges Bernardes"
+    body: "Coming soon"
+    parent: o_casal
+    permalink: "igor"
+    is_protected: 1
+
+onde_ficar:
+    name: "Onde Ficar"
+    body: "Coming soon"
+    parent: a_cerimonia
+    permalink: "onde-ficar"
+    is_protected: 1
+    
+como_chegar:
+    name: "Como Chegar"
+    body: "Coming soon"
+    parent: a_cerimonia
+    permalink: "como-chegar"
+    is_protected: 1
+
+home2:
+    name: "Agradecimentos"
+    body: "Coming soon"
+    parent: 
+    permalink: "home"
+    is_protected: 1
+    
+a_cerimonia:
+    name: "A Cerimônia"
+    body: "Coming soon"
+    parent: 
+    permalink: "a-cerimonia"
+    is_protected: 1
+    
+fotos:
+    name: "Fotos"
+    body: "Coming soon"
+    parent: 
+    permalink: "fotos"
+    is_protected: 1
+    
+o_casal:
+    name: "O Casal"
+    body: "Coming soon"
+    parent: 
+    permalink: "o-casal"
+    is_protected: 1
+    
+mensagens:
+    name: "Mensagens"
+    body: "Coming soon"
+    parent: 
+    permalink: "mensagens"
+    is_protected: 1
+
 home:
   name: Home Page
   body: "Lorem ipsum dolor sit amet, ipsum mi integer dolor dolor libero eleifend, est turpis auctor id rutrum, in proin, enim sodales vel eros. Est interdum, dolor lacus vitae turpis tristique, amet scelerisque nulla, sem placerat diam ultricies morbi. Nullam nullam pede nunc, quisque integer vitae. Donec consequat nunc sed, mauris erat ipsum mollis morbi eget. Lorem orci amet in volutpat sed. 

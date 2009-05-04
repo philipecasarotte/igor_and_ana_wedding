@@ -4,6 +4,8 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.main_pages
+    @page = Page.find_by_permalink("home")
+    @metatag_object = @page
   end
   
   def contact
