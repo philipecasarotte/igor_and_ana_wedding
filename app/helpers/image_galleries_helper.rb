@@ -1,0 +1,2 @@
+module ImageGalleriesHelper
+end

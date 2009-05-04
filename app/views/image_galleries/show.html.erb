@@ -1,0 +1,35 @@
+<h1><%= @page.name %> &raquo; <%= @image_gallery.name %></h1>
+
+<div id="drop_down">
+	Choose Gallery
+	<ul id="list_galleries">
+	<% @image_galleries.each do |gallery| %>
+		<li><%= link_to gallery.name.summary(35), image_gallery_path(gallery.permalink) %></li>
+	<% end -%>
+	</ul>
+</div>
+
+<div id="big_image">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="center" valign="middle"><%= image_tag @image_gallery.images[0].image.url(:image) rescue "" %></td>
+		</tr>
+		<tr>
+			<td align="center" valign="middle" class="description"><%= @image_gallery.images[0].name rescue "" %></td>
+		</tr>
+	</table>
+</div>
+
+<div id="thumbs">
+	<%= link_to(image_tag( '/images/bt/top.png', :size=>"12x7", :alt=>"Top", :title=>"Top", :class => "bt_top"),"#") %>
+	<div>
+		<ul>
+		<% @image_gallery.images.each do |image| %>
+			<li><%= link_to image_tag(image.image.url(:thumb), :size=>"68x50", :alt=>image.name, :title=>image.name), image.image.url(:image) %></li>
+		<% end %>
+		</ul>
+	</div>
+	<%= link_to(image_tag( '/images/bt/bottom.png', :size=>"12x7", :alt=>"bottom", :title=>"bottom", :class => "bt_bottom"),"#") %>
+</div>
+<%= render :partial => 'pages/sidebar' %>
+<%= javascript_include_tag 'plugins/jCarouselLite', 'plugins/hoverIntent', 'gallery/default'%>

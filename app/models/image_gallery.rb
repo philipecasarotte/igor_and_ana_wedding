@@ -3,5 +3,7 @@ class ImageGallery < ActiveRecord::Base
   
   has_many :images
   
+  has_permalink :name
+  
   default_scope :order => "position, id DESC"
 end
