@@ -3,9 +3,17 @@
 one:
   name: MyString
   position: 1
-  image_gallery_id: 1
+  image_file_name: MyString
+  image_content_type: MyString
+  image_file_size: 1
+  image_updated_at: 2009-04-29 11:03:24
+  image_gallery: one
 
 two:
   name: MyString
   position: 1
-  image_gallery_id: 1
+  image_file_name: MyString
+  image_content_type: MyString
+  image_file_size: 1
+  image_updated_at: 2009-04-29 11:03:24
+  image_gallery: one
