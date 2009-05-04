@@ -20,7 +20,8 @@ h5 {font-size:14px;color:#666;}
 #main.home {background:url("/images/bg/home.png") top center no-repeat;}
 
 #content {margin:0 auto;width:771px;}
-#content_cms {float:left;width:758px;padding:0 0 0 12px;}
+#content_cms {float:left;width:728px;padding:5px 20px;}
+#content_cms.home {float:left;width:758px;padding:0 0 0 12px;}
 
 #menu {float:left;font:normal 16px Georgia, "Times New Roman", serif;text-transform:uppercase;margin-bottom:22px;}
 #menu a {display:block;color:#333;padding:5px 38px;}

@@ -1,61 +1,61 @@
 ana:
-    name: "Ana Rachel Tauk Casarotte"
+    name: "ANA RACHEL TAUK CASAROTTE"
     body: "Coming soon"
     parent: o_casal
     permalink: "ana-rachel"
     is_protected: 1
 
 igor:
-    name: "Igor Borges Bernardes"
+    name: "IGOR BORGES BERNARDES"
     body: "Coming soon"
     parent: o_casal
     permalink: "igor"
     is_protected: 1
 
 onde_ficar:
-    name: "Onde Ficar"
+    name: "ONDE FICAR"
     body: "Coming soon"
     parent: a_cerimonia
     permalink: "onde-ficar"
     is_protected: 1
     
 como_chegar:
-    name: "Como Chegar"
+    name: "COMO CHEGAR"
     body: "Coming soon"
     parent: a_cerimonia
     permalink: "como-chegar"
     is_protected: 1
 
 home:
-    name: "Agradecimentos"
+    name: "AGRADECIMENTOS"
     body: "Coming soon"
     parent: 
     permalink: "home"
     is_protected: 1
     
 a_cerimonia:
-    name: "A Cerimônia"
+    name: "A CERIMÔNIA"
     body: "Coming soon"
     parent: 
     permalink: "a-cerimonia"
     is_protected: 1
     
 fotos:
-    name: "Fotos"
+    name: "FOTOS"
     body: "Coming soon"
     parent: 
     permalink: "fotos"
     is_protected: 1
     
 o_casal:
-    name: "O Casal"
+    name: "O CASAL"
     body: "Coming soon"
     parent: 
     permalink: "o-casal"
     is_protected: 1
     
 mensagens:
-    name: "Mensagens"
+    name: "MENSAGENS"
     body: "Coming soon"
     parent: 
     permalink: "mensagens"

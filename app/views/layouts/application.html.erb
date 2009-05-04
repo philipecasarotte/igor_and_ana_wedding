@@ -22,7 +22,7 @@
 	<%= yield :head %>
 </head>
 <body>
-	<div id="main">
+	<div id="main" <%= "class='home'" if current_page?(root_path) %>>
 		<div id="content">
 			<ul id="menu">
 				<li><%= link_to "Home", root_path %></li>
@@ -31,7 +31,7 @@
 				<li><%= link_to "O Casal", page_path("o-casal") %></li>
 				<li><%= link_to "Mensagens", "posts_path" %></li>
 			</ul>
-			<div id="content_cms">
+			<div id="content_cms" <%= "class='home'" if current_page?(root_path) %>>
 				<% [:error, :notice].each do |message| %>
 					<% content_tag :div, :class => message do %>
 						<%= flash[message] %>
