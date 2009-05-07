@@ -1,16 +1,16 @@
-<h1>Listing Images for <%= parent_object.name %></h1>
+<h1>Listando Imagens da Galeria "<%= parent_object.name %>"</h1>
 <br />
 <table>
   <tr>
-    <th>Image</th>
+    <th>Imagem</th>
   </tr>
   <% @images.each do |image| %>
     <tr>
       <td><%= image_tag image.image.url(:thumb) %></td>
-      <td><%= link_to "Edit", edit_object_url(image) %></td>
-      <td><%= link_to "Destroy", object_url(image), :method => :delete %></td>
+      <td><%= link_to "Editar", edit_object_url(image) %></td>
+      <td><%= link_to "Deletar", object_url(image), :confirm => 'Você tem certeza?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 <br />
-<%= link_to "New Image", new_object_url %> | <%= link_to "Reorder", reorder_admin_image_gallery_images_path(parent_object) %> | <%= link_to "Back", admin_image_galleries_path %>
+<%= link_to "Adicionar Imagem", new_object_url %> | <%= link_to "Reordenar", reorder_admin_image_gallery_images_path(parent_object) %> | <%= link_to "Voltar", admin_image_galleries_path %>

@@ -4,7 +4,7 @@ class Image < ActiveRecord::Base
   belongs_to :image_gallery
   
   has_attached_file :image,
-                    :styles => {:thumb => "100x100#", :image => "600x400>"},
+                    :styles => {:thumb => "100x100#", :image => "728x456>"},
                     :path => ":rails_root/public/system/:class/:id/:style/:basename.:extension",
                     :url => "/system/:class/:id/:style/:basename.:extension",
                     :default_url => ""

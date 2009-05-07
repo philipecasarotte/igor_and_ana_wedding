@@ -6,9 +6,9 @@
 	<% end %>
 	<span><%=h page.name %></span>
 	<div>
-		<%=link_to 'Reorder children', reorder_admin_pages_url(:parent_id => page.id) if page.children.size > 1  %>
-		<%=link_to 'New child', new_admin_page_url(:parent_id => page.id) %>
-		<%=link_to 'Edit', edit_object_url(page) %>
-		<%=link_to 'Destroy', object_url(page), :confirm => 'Are you sure?', :method => :delete unless page.is_protected %>
+		<%=link_to 'Reordenar filhas', reorder_admin_pages_url(:parent_id => page.id) if page.children.size > 1  %>
+		<%=link_to 'Adicionar filhas', new_admin_page_url(:parent_id => page.id) %>
+		<%=link_to 'Editar', edit_object_url(page) %>
+		<%=link_to 'Deletar', object_url(page), :confirm => 'Você tem certeza?', :method => :delete unless page.is_protected %>
 	</div>
 </li>

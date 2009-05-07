@@ -1,0 +1,22 @@
+<h1><%= @page.name %></h1>
+<% remote_form_for :post, :update => "comments", :loading => "$('.loading').show();", :loaded => "$('.loading').hide();$('#post_name, #post_email, #post_body').val('')", :url => {:action => :create}, :html => {:id => "leave_a_comment"} do |f| %>
+	<p>
+	  <%= f.label :name, "Nome" %>
+	  <%= f.text_field :name, :class => "required" %>
+	</p>
+	<p>
+	  <%= f.label :email %>
+	  <%= f.text_field :email, :class => "required" %>
+	</p>
+	<p>
+	  <%= f.label :body, "Mensagem" %>
+	  <%= f.text_area :body, :class => "required" %>
+	</p>
+	<%= submit_tag "Enviar", :class => "submit" %>
+<% end %>
+<%= @page.body %>
+<div id="comments">
+	<ul>
+		<%= render :partial => "posts" %>
+	</ul>
+</div>

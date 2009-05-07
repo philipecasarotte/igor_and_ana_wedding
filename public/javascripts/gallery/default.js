@@ -1,30 +1,29 @@
 $(document).ready(function() {
 	//Carousel
 	$("#thumbs div").jCarouselLite({
-	    btnNext: ".bt_bottom",
-	    btnPrev: ".bt_top",
-	    visible: 3,
+	    btnNext: "#next",
+	    btnPrev: "#prev",
+	    visible: 6,
 	    scroll: 1,
-			vertical: true,
+		vertical: false,
 	    speed: 500,
 	    circular: false
 	});
 
 	//Loader Imagem
 	$("#thumbs li").find("a").click(function(){
-		var loader = $("#loader");
 		var newImage = $(this).attr('href');
 		var bigImage = $('#big_image img:first');
+		bigImage.fadeOut();
 		$.ajax({
 		  type:"GET",
 		  url: $(this).attr('href'),
 		  success:function(data){
 		  },
 		  complete: function(){
-			loader.hide();
+			bigImage.fadeIn();
 		  },
 		  beforeSend: function(){
-			loader.show();
 			bigImage.attr('src', newImage);
 		  }
 		});
@@ -37,10 +36,10 @@ $(document).ready(function() {
 });
 
 function down(){
-	$("#list_galleries").animate({height: 'toggle', opacity: 'toggle' },200);
+	$("#drop_down ul").animate({height: 'toggle', opacity: 'toggle' },200);
 } 
 
 function up(){
-	$("#list_galleries").animate({height: 'toggle', opacity: 'toggle' },300);
+	$("#drop_down ul").animate({height: 'toggle', opacity: 'toggle' },300);
 }
 

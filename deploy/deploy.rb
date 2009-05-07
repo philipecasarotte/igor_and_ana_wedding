@@ -1,13 +1,13 @@
 # =============================================================================
 # CONFIGURE OS VALORES DE ACORDO COM SUA HOSPEDAGEM
 # =============================================================================
-set :user, "user"
-set :password, "password"
-set :host, "server_ip"
-set :domain, "domain.com"
-set :application, "app_name"
+set :user, "philipe"
+set :password, "bundinha"
+set :host, "philipecasarotte.com.br"
+set :domain, "igoreanarachel.com.br"
+set :application, "wedding"
 
-set :repository, "git://dburnsdesign.com/repos/mainline.git"
+set :repository, "git://github.com/philipecasarotte/igor_and_ana_wedding.git"
 # =============================================================================
 # NAO MEXER DAQUI PARA BAIXO
 # =============================================================================
@@ -15,8 +15,8 @@ role :web, host
 role :app, host
 role :db,  host
 
-set :deploy_to, "/home/#{user}" 
-set :public_html, "/home/#{user}/public_html"
+set :deploy_to, "/home/#{user}/igoreanarachel" 
+set :public_html, "/home/#{user}/igoreanarachel/public_html"
 set :current_deployment, "#{deploy_to}/current"
 
 set :runner, nil

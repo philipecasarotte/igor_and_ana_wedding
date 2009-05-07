@@ -1,9 +1,9 @@
-<h1>Listing <%= 'Admin' if params[:role]=='admin' %> Users</h1>
-
+<h1>Listando Usuários <%= 'Administradores' if params[:role]=='admin' %></h1>
+<br/>
 <table>
   <tr>
     <th>Login</th>
-    <th>Name</th>
+    <th>Nome</th>
     <th>Email</th>
   </tr>
   <%- @users.each do |user|%>
@@ -12,11 +12,11 @@
       <td><%=h user.name %></td>
       <td><%=h user.email %></td>
     
-      <td><%=link_to 'Edit', edit_object_url(user) %></td>
-      <td><%=link_to 'Destroy', object_url(user), :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=link_to 'Editar', edit_object_url(user) %></td>
+      <td><%=link_to 'Deletar', object_url(user), :confirm => 'Você tem certeza?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 <br/>
 
-<%= link_to 'New User', new_object_url %>
+<%= link_to 'Adicionar Usuário', new_object_url %>

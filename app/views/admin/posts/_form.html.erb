@@ -1,0 +1,12 @@
+<p>
+  <%= f.label :name, "Nome" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<p>
+  <%= f.label :email %>
+  <%= f.text_field :email, :class => "required" %>
+</p>
+<p>
+  <%= f.label :body, "Mensagem" %>
+  <%= fckeditor_textarea "post", "body", :height => "400px" %>
+</p>

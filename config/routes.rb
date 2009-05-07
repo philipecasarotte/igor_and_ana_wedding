@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :image_galleries, :collection => { :reorder=>:get, :order=>:post } do |image_gallery|
       image_gallery.resources :images, :collection => { :reorder=>:get, :order=>:post }
     end
+    admin.resources :posts
     admin.resources :users
     admin.resource :session
     admin.root :controller => 'pages'
@@ -14,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.pages '/pages/:action', :controller => 'pages'
   map.resources :pages
+  map.resources :posts, :as => :mensagens
   map.resources :image_galleries, :as => :fotos
   map.root :controller => 'pages', :action => 'index'
 end

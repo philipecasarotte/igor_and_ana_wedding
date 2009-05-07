@@ -20,7 +20,7 @@ h5 {font-size:14px;color:#666;}
 #main.home {background:url("/images/bg/home.png") top center no-repeat;}
 
 #content {margin:0 auto;width:771px;}
-#content_cms {float:left;width:728px;padding:5px 20px;}
+#content_cms {float:left;width:728px;padding:5px 20px;position:relative;}
 #content_cms.home {float:left;width:758px;padding:0 0 0 12px;}
 
 #menu {float:left;font:normal 16px Georgia, "Times New Roman", serif;text-transform:uppercase;margin-bottom:22px;}
@@ -42,3 +42,32 @@ h5 {font-size:14px;color:#666;}
 #directions address {margin:10px 0;}
 
 #footer {float:left;width:100%;background-color:#FEE0F3;text-align:center;padding:10px 0;margin-top:30px;}
+
+/*Gallery*/
+#drop_down {cursor:pointer;width:150px;height:28px;padding:5px 10px;position:absolute;z-index:999;right:20px;top:10px;background:url("/images/bg/menu.png") repeat-x;color:white;font-size:14px;}
+#drop_down ul {display:none;background-color:#FC81D6;width:170px;left:0;position:absolute;padding:5px 0;}
+#drop_down ul li {list-style:none;}
+#drop_down ul li a {color:white;display:block;padding:3px 10px;}
+#drop_down ul li a:hover {background-color:white;color:#F852B9;text-decoration:none;}
+
+#big_image {margin-top:20px;}
+#big_image td {width:728px;height:456px;background:url("/images/loader.gif") center center no-repeat;}
+#big_image td.description {height:auto;background:none;padding:3px 10px;font:normal 16px Georgia, "Times New Roman", serif;}
+
+#thumbs {width:728px;float:left;margin-top:20px;}
+#thumbs div {position:relative;overflow:hidden;float:left;}
+#thumbs ul {float:left;width:600px;position:absolute;}
+#thumbs #prev,
+#thumbs #next {cursor:pointer;}
+#thumbs #prev {float:left;margin:25px 13px 0 0;}
+#thumbs #next {float:right;margin-top:25px;}
+#thumbs li {display:inline;float:left;margin:0 3px;}
+#thumbs li img{border:solid 2px #F852B9;}
+#thumbs li img:hover {border-color:#D5EB2F;}
+
+/*Posts*/
+#leave_a_comment {float:right;width:300px;height:220px;background:url("/images/bg/form.png") no-repeat;margin-left:20px;padding:20px 20px;}
+#leave_a_comment label {font-weight:bold;color:#F852B9;}
+#leave_a_comment input {width:295px;height:20px;border:solid 1px #FEE0F3;}
+#leave_a_comment textarea {width:295px;height:60px;border:solid 1px #FEE0F3;}
+#leave_a_comment input.submit {width:auto;float:right;margin:10px 5px 0 0;}

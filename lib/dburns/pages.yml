@@ -1,4 +1,11 @@
 ana:
+    name: "LISTA DE PRESENTES"
+    body: "Coming soon"
+    parent: 
+    permalink: "lista-de-presentes"
+    is_protected: 1
+
+ana:
     name: "ANA RACHEL TAUK CASAROTTE"
     body: "Coming soon"
     parent: o_casal

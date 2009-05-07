@@ -1,0 +1,16 @@
+<%= error_messages_for :post %>
+<% [:error, :notice].each do |message| %>
+	<% content_tag :div, :class => message do %>
+		<%= flash[message] %>
+	<% end if flash[message] %>
+<% end %>
+<% if @posts.any? %>
+	<% @posts.each do |post| %>
+	<li>
+		<h6><%= post.name %><small><%= post.created_at.strftime("%d/%m/%Y às %I:%M") %></small></h6>
+		<%= simple_format(post.body) %>
+	</li>
+	<% end %>
+<% else %>
+	<li>Nenhuma mensagem.</li>
+<% end %>

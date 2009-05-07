@@ -13,7 +13,7 @@ class ImageGalleriesControllerTest < ActionController::TestCase
         get :index
       end
 
-      should_redirect_to("first gallery page") { image_gallery_path(PhotoGallery.first.permalink) }
+      should_redirect_to("first gallery page") { image_gallery_path(ImageGallery.first.permalink) }
     end
     
 
