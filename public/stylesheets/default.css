@@ -70,4 +70,4 @@ h5 {font-size:14px;color:#666;}
 #leave_a_comment label {font-weight:bold;color:#F852B9;}
 #leave_a_comment input {width:295px;height:20px;border:solid 1px #FEE0F3;}
 #leave_a_comment textarea {width:295px;height:60px;border:solid 1px #FEE0F3;}
-#leave_a_comment input.submit {width:auto;float:right;margin:10px 5px 0 0;}
+#leave_a_comment input.submit {width:auto;height:auto;float:right;margin:10px 5px 0 0;}
