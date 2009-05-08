@@ -6,15 +6,15 @@ class Mailer < ActionMailer::Base
   
   ActionMailer::Base.raise_delivery_errors = true
 
-  ActionMailer::Base.smtp_settings = {
-      :tls => true,
-      :address => "smtp.gmail.com",
-      :port => "587",
-      :domain => SITE_DOMAIN,
-      :authentication => :plain,
-      :user_name => "dev.dburns@gmail.com",
-      :password => "dev@1942!"
-  }
+  # ActionMailer::Base.smtp_settings = {
+  #       :tls => true,
+  #       :address => "smtp.gmail.com",
+  #       :port => "587",
+  #       :domain => SITE_DOMAIN,
+  #       :authentication => :plain,
+  #       :user_name => "dev.dburns@gmail.com",
+  #       :password => "dev@1942!"
+  #   }
   
   def contact(params)
     @recipients = 'dev.dburns@gmail.com' 
