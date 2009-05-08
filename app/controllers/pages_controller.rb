@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
  
-  after_filter(:except => :contact) {|c| c.cache_page}
+  after_filter(:except => :index, :contact) {|c| c.cache_page}
 
   def index
     @pages = Page.main_pages
