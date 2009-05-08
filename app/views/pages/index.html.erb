@@ -5,7 +5,7 @@
 	<% @posts.each do |post| %>
 		<li <%= "class=#{cycle "first", ""}" %>>
 			<strong><%= post.name %> disse:</strong>
-			<%= simple_format(post.body.summary(100)) %>
+			<%= simple_format(post.body.summary(180)) %>
 		</li>
 	<% end %>
 	</ul>
