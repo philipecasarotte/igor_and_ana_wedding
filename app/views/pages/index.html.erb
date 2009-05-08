@@ -2,14 +2,12 @@
 <div id="messages">
 	<h2>ÚLTIMAS MENSAGENS<%= link_to "VER TODAS", "posts_path", :class => "button" %></h2>
 	<ul>
-		<li class="first">
-			<strong>Philipe Casarotte disse:</strong>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+	<% @posts.each do |post| %>
+		<li <%= "class=#{cycle "first", ""}" %>>
+			<strong><%= post.name %> disse:</strong>
+			<%= simple_format(post.body.summary(100)) %>
 		</li>
-		<li>
-			<strong>Philipe Casarotte disse:</strong>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
-		</li>
+	<% end %>
 	</ul>
 	<h2><%= @page.name %></h2>
 	<%= simple_format(@page.body) %>
