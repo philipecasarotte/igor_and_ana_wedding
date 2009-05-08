@@ -58,7 +58,11 @@ Rails::Initializer.run do |config|
   # which shouldn't be used to store highly confidential information
   # (create the session table with "rake db:sessions:create")
   # config.action_controller.session_store = :active_record_store
-
+  
+  # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+  # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
+  config.i18n.default_locale = "pt-BR"
+  
   # Use SQL instead of Active Record's schema dumper when creating the test database.
   # This is necessary if your schema can't be completely dumped by the schema dumper,
   # like if you have constraints or database-specific column types

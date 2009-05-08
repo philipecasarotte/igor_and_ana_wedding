@@ -4,6 +4,7 @@ production:
   database: igoreanarachel_production
   username: philipe
   password: bundinha
+  host: mysql.philipecasarotte.com.br
 
 development:
   production
