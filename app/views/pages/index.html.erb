@@ -1,6 +1,6 @@
 <%= image_tag "igor_e_ana.jpg", :alt => "Igor e Ana Rachel" %>
 <div id="messages">
-	<h2>ÚLTIMAS MENSAGENS<%= link_to "VER TODAS", "posts_path", :class => "button" %></h2>
+	<h2>ÚLTIMAS MENSAGENS<%= link_to "VER TODAS", posts_path, :class => "button" %></h2>
 	<ul>
 	<% @posts.each do |post| %>
 		<li <%= "class=#{cycle "first", ""}" %>>

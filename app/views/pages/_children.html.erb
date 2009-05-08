@@ -1,0 +1,13 @@
+<div id="children">
+<% if @pages.present? %>
+	<ul>
+	<% @pages.each do |page| %>
+		<li <%= "class='#{cycle("first", "")}'" %>>
+			<h2><%= link_to page.name, page_path(page.permalink) %></h2>
+			<%= simple_format(page.body.summary(380)) %>
+			<%= link_to image_tag("bt/see_more.png"), page_path(page.permalink) %>
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+</div>

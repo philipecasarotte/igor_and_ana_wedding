@@ -1,16 +1,23 @@
-<%= error_messages_for :post %>
+<h2>Mensagens enviadas:</h2>
+<div id="messages">
+	<%= error_messages_for :post %>
+</div>
 <% [:error, :notice].each do |message| %>
 	<% content_tag :div, :class => message do %>
 		<%= flash[message] %>
 	<% end if flash[message] %>
 <% end %>
 <% if @posts.any? %>
+<ul>
 	<% @posts.each do |post| %>
-	<li>
-		<h6><%= post.name %><small><%= post.created_at.strftime("%d/%m/%Y às %I:%M") %></small></h6>
+	<li <%= "class='#{cycle("odd", "even")}'" %>>
+		<h6><%= post.name %><small><%=l post.created_at, :format => :long %></small></h6>
 		<%= simple_format(post.body) %>
 	</li>
 	<% end %>
+</ul>
 <% else %>
+<ul>	
 	<li>Nenhuma mensagem.</li>
-<% end %>
+</ul>
+<% end %>	

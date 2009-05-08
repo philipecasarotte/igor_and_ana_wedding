@@ -32,11 +32,6 @@
 				<li><%= link_to "Mensagens", posts_path %></li>
 			</ul>
 			<div id="content_cms" <%= "class='home'" if current_page?(root_path) %>>
-				<% [:error, :notice].each do |message| %>
-					<% content_tag :div, :class => message do %>
-						<%= flash[message] %>
-					<% end if flash[message] %>
-				<% end %>
 				<%= yield  %>
 			</div>
 			<div id="footer"><%= link_to 'Ruby on Rails Development', 'http://www.philipecasarotte.com.br', :target => '_blank' %> by Philipe Casarotte<br/>(irmão da noiva ou cunhado do noivo)</div>

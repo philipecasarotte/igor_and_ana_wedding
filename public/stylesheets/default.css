@@ -15,6 +15,7 @@ h2 {font-size:16px;color:#F852B9;}
 h3 {font-size:24px;}
 h4 {font-size:18px;}
 h5 {font-size:14px;color:#666;}
+h6 {font-size:20px;color:#666;}
 
 #main {background:url("/images/bg/main.png") top center no-repeat;height:auto !important;height:465px;min-height:465px;}
 #main.home {background:url("/images/bg/home.png") top center no-repeat;}
@@ -40,6 +41,11 @@ h5 {font-size:14px;color:#666;}
 #directions h3 {margin-bottom:10px;}
 #directions img.wrap {border:solid 5px #FEE0F3;float:left;margin-right:10px;}
 #directions address {margin:10px 0;}
+
+#children {margin:20px 0;}
+#children li.first {margin-right:25px;}
+#children li {float:left;display:inline;width:350px;margin-bottom:25px;}
+#children li a img {margin-top:10px;float:right;}
 
 #footer {float:left;width:100%;background-color:#FEE0F3;text-align:center;padding:10px 0;margin-top:30px;}
 
@@ -71,3 +77,16 @@ h5 {font-size:14px;color:#666;}
 #leave_a_comment input {width:295px;height:20px;border:solid 1px #FEE0F3;}
 #leave_a_comment textarea {width:295px;height:60px;border:solid 1px #FEE0F3;}
 #leave_a_comment input.submit {width:auto;height:auto;float:right;margin:10px 5px 0 0;}
+
+#comments {clear:both;}
+#comments ul {margin:20px 0;}
+#comments li {list-style:none;padding:20px;}
+#comments li.odd {background-color:#EAECD2;}
+#comments small {font-size:13px;border-left:solid 1px #BED713;padding-left:10px;margin-left:10px;font-style:italic;}
+#comments #messages {float:left;width:728px;margin:0;}
+#comments #messages li {padding:0;margin:0;display:block;clear:both;}
+#comments #messages ul {margin:10px 0;}
+#comments #messages h2 {color:#BF3B8E;}
+
+div.notice {clear:both;border:solid 2px #9EB310;background-color:#EAECD2;color:#9EB310;padding:3px 5px;}
+div.error {clear:both;border:solid 2px #BF3B8E;background-color:#FDB5AF;color:#BF3B8E;padding:3px 5px;text-align:center;font-style:italic;font-weight:bold;}
