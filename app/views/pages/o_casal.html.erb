@@ -1,0 +1,14 @@
+<h1><%= @page.name %></h1>
+<%= @page.body %>
+<div id="children">
+<% if @pages.present? %>
+	<ul>
+	<% @pages.each do |page| %>
+		<li <%= "class='#{cycle("first", "")}'" %>>
+			<h2><%= link_to page.name, page_path(page.permalink) %></h2>
+			<%= page.body %>
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+</div>
