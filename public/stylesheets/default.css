@@ -67,7 +67,7 @@ h6 {font-size:20px;color:#666;}
 #thumbs #next {cursor:pointer;}
 #thumbs #prev {float:left;margin:25px 13px 0 0;}
 #thumbs #next {float:right;margin-top:25px;}
-#thumbs li {display:inline;float:left;margin:0 3px;}
+#thumbs li {display:inline;float:left;margin:0 3px;width:104px;height:104px;}
 #thumbs li img{border:solid 2px #F852B9;}
 #thumbs li img:hover {border-color:#D5EB2F;}
 
