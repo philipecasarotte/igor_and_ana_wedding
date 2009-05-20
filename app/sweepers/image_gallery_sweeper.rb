@@ -1,5 +1,5 @@
-class PageSweeper < ActionController::Caching::Sweeper
-  observe Page
+class ImageGallerySweeper < ActionController::Caching::Sweeper
+  observe ImageGallery, Image
 
   def after_save(page)
     clear_page_cache(page)
@@ -11,7 +11,7 @@ class PageSweeper < ActionController::Caching::Sweeper
 
   def clear_page_cache(page)
     expire_page('/index')
-    dirs = %w{ paginas }
+    dirs = %w{ fotos }
     sweep_directory(dirs)
   end
 

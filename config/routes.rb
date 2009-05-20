@@ -13,8 +13,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.root :controller => 'pages'
   end
 
-  map.pages '/pages/:action', :controller => 'pages'
-  map.resources :pages
+  map.pages '/paginas/:action', :controller => 'pages'
+  map.resources :pages, :as => :paginas
   map.resources :posts, :as => :mensagens
   map.resources :image_galleries, :as => :fotos
   map.root :controller => 'pages', :action => 'index'

@@ -1,4 +1,7 @@
 class ImageGalleriesController < ApplicationController
+  
+  caches_page :index, :show
+  
   def index
     redirect_to image_gallery_path(ImageGallery.first.permalink)
   end
