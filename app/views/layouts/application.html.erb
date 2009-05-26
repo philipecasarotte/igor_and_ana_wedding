@@ -30,6 +30,7 @@
 				<li><%= link_to "Fotos", image_galleries_path %></li>
 				<li><%= link_to "O Casal", page_path("o-casal") %></li>
 				<li><%= link_to "Mensagens", posts_path %></li>
+				<li><%= link_to "Lista de Presentes", page_path("lista-de-presentes") %></li>
 			</ul>
 			<div id="content_cms" <%= "class='home'" if current_page?(root_path) %>>
 				<%= yield  %>
