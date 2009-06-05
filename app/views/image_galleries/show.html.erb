@@ -1,10 +1,10 @@
 <h1><%= @page.name %> &raquo; <%= @image_gallery.name %></h1>
 
 <div id="drop_down">
-	Outras Galerias
+	Selecione aqui outras Galerias
 	<ul>
 	<% @image_galleries.each do |gallery| %>
-		<li><%= link_to gallery.name.summary(35), image_gallery_path(gallery.permalink) %></li>
+		<li><%= link_to gallery.name.summary(55), image_gallery_path(gallery.permalink) %></li>
 	<% end -%>
 	</ul>
 </div>

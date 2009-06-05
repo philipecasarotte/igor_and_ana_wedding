@@ -53,8 +53,8 @@ h6 {font-size:20px;color:#666;}
 #footer {float:left;width:100%;background-color:#FEE0F3;text-align:center;padding:10px 0;margin-top:30px;}
 
 /*Gallery*/
-#drop_down {cursor:pointer;width:150px;height:28px;padding:5px 10px;position:absolute;z-index:999;right:20px;top:10px;background:url("/images/bg/menu.png") repeat-x;color:white;font-size:14px;}
-#drop_down ul {display:none;background-color:#FC81D6;width:170px;left:0;position:absolute;padding:5px 0;}
+#drop_down {cursor:pointer;width:220px;height:28px;padding:5px 10px;position:absolute;z-index:999;right:20px;top:10px;background:url("/images/bg/menu_galleries.png") repeat-x;color:white;font-size:14px;}
+#drop_down ul {display:none;background-color:#FC81D6;width:240px;left:0;position:absolute;padding:5px 0;}
 #drop_down ul li {list-style:none;}
 #drop_down ul li a {color:white;display:block;padding:3px 10px;}
 #drop_down ul li a:hover {background-color:white;color:#F852B9;text-decoration:none;}
