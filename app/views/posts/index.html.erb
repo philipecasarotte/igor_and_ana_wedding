@@ -2,17 +2,17 @@
 <% remote_form_for :post, :update => "comments", :loading => "$('.loading').show();", :loaded => "$('.loading').hide();$('#post_name, #post_email, #post_body').val('')", :url => {:action => :create}, :html => {:id => "leave_a_comment"} do |f| %>
 	<p>
 	  <%= f.label :name, "Nome" %>
-	  <%= f.text_field :name, :class => "required" %>
+	  <%= f.text_field :name, :class => "required", :value => "Desativado", :disabled => true %>
 	</p>
 	<p>
 	  <%= f.label :email %>
-	  <%= f.text_field :email, :class => "required" %>
+	  <%= f.text_field :email, :class => "required", :value => "Desativado", :disabled => true %>
 	</p>
 	<p>
 	  <%= f.label :body, "Mensagem" %>
-	  <%= f.text_area :body, :class => "required" %>
+	  <%= f.text_area :body, :class => "required", :value => "Desativado", :disabled => true %>
 	</p>
-	<%= image_submit_tag "bt/send.png", :class => "submit" %>
+	<%= image_submit_tag "bt/send.png", :class => "submit", :disabled => true %>
 <% end %>
 <%= @page.body %>
 <div id="comments">
